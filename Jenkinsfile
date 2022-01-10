@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'cp /var/lib/jenkins/workspace/CI_conferencescesi_FRONT_APP /home/admin/conferencescesi/'
+                sh 'cp -R /var/lib/jenkins/workspace/CI_conferencescesi_FRONT_APP /home/admin/conferencescesi/'
             }
         }
     }
