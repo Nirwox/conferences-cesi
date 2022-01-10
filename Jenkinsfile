@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Copy source') {
             steps {
-                sh 'git clone "https://github.com/Nirwox/1treize3.git"'
+                catchError {
+                    sh 'git clone "https://github.com/Nirwox/1treize3.git"'
+                }
             }
         }
         stage('Deploy') {
