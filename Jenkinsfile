@@ -9,6 +9,11 @@ pipeline {
                 }
             }
         }
+        stage('Clean') {
+            steps {
+                    sh 'rm -rf /home/admin/conferencescesi/CI_conferencescesi_FRONT_APP/'
+            }
+        }
         stage('Deploy') {
             steps {
                 sh 'cp -R /var/lib/jenkins/workspace/CI_conferencescesi_FRONT_APP/ /home/admin/conferencescesi/'
