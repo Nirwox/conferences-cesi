@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Copy source') {
+        stage('Clone Source') {
             steps {
                 catchError {
                     sh 'git clone "https://github.com/Nirwox/1treize3.git"'
@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'cp -R /var/lib/jenkins/workspace/CI_conferencescesi_FRONT_APP/ /home/admin/conferencescesi/'
+                sh 'cp -R -T /var/lib/jenkins/workspace/CI_conferencescesi_FRONT_APP/ /home/admin/conferencescesi/'
             }
         }
     }
