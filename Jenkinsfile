@@ -14,6 +14,11 @@ pipeline {
                     sh 'rm -rf /home/admin/conferencescesi/CI_conferencescesi_FRONT_APP/'
             }
         }
+        stage('Clean useless file') {
+            steps {
+                    sh 'rm -rf /var/lib/jenkins/workspace/CI_conferencescesi_FRONT_APP/.git'
+            }
+        }
         stage('Deploy') {
             steps {
                 sh 'cp -R -T /var/lib/jenkins/workspace/CI_conferencescesi_FRONT_APP/ /home/admin/conferencescesi/'
