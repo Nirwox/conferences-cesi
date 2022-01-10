@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Copy source') {
             steps {
-                sh 'wget https://github.com/Nirwox/1treize3/archive/refs/heads/master.zip'
+                sh 'git clone https://github.com/Nirwox/1treize3.git'
             }
         }
         stage('Deploy') {
