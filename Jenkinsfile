@@ -14,7 +14,7 @@ pipeline {
                     sh 'rm -rf /home/admin/conferencescesi/CI_conferencescesi_FRONT_APP/'
             }
         }
-        stage('Clean useless file') {
+        stage('Delete .git folder') {
             steps {
                     sh 'rm -rf /var/lib/jenkins/workspace/CI_conferencescesi_FRONT_APP/.git'
             }
