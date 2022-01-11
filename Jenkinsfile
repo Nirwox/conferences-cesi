@@ -4,8 +4,10 @@ pipeline {
     stages {
         stage('Clone Source') {
             steps {
-                catchError {
+                try {
                     sh 'git clone "https://github.com/Nirwox/1treize3.git"'
+                } catch (err) {
+                    echo err.getMessage()
                 }
             }
         }
