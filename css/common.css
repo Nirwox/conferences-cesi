@@ -13,3 +13,23 @@
     background-color: #5CE1E6;
     border-color: #5CE1E6;
 }
+.cookieConsent {
+    align-items: baseline;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    left: 0px; position: fixed;
+    width: 100%;
+    z-index: 999;
+    bottom: 0px;
+}
+.cookieConsentLabel {
+    flex: 1 0 300px; 
+    margin: 15px;
+    font-size: 15px;
+}
+.cookieConsentBtnBlock {
+    display: flex;
+}
