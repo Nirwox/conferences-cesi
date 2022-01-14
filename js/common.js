@@ -1,5 +1,3 @@
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EDS1D1TBMF%22%3E"></script>
-
 window.onload = function() {
     let cookieConsent = document.getElementById("CookieConsent");
     if(getCookie('gStats') == "") {
