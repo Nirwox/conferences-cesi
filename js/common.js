@@ -4,7 +4,6 @@ function setCookie(cname, cvalue, exdays) {
     let expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     document.getElementById("CookieConsent").style.display.none;
-    alert('test')
 }
 
 function getCookie(cname) {
