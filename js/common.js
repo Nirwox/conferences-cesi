@@ -1,10 +1,11 @@
-let cookieConsent = document.getElementById("CookieConsent");
-if(getCookie('gStats') == "") {
-    cookieConsent.style.display = "flex"
-} else {
-    cookieConsent.style.display = "none";
-}
-
+window.onload = function() {
+    let cookieConsent = document.getElementById("CookieConsent");
+    if(getCookie('gStats') == "") {
+        cookieConsent.style.display = "flex"
+    } else {
+        cookieConsent.style.display = "none";
+    }
+  };
 
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
