@@ -3,6 +3,11 @@ window.onload = function() {
     if(getCookie('gStats') == "") {
         cookieConsent.style.display = "flex"
     } else {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-EDS1D1TBMF');
         cookieConsent.style.display = "none";
     }
   };
